@@ -1,0 +1,56 @@
+body{
+    background-image: linear-gradient(45deg, rgb(70, 150, 184) ,rgb(255, 255, 255) ,rgb(245, 189, 116));
+    font-family: 'Bad Script', cursive;
+    text-align: center;
+}
+
+h1 ,h2{
+    font-size: 50px;
+    text-shadow: -6px 2px 9px rgba(0,0,0,0.6);
+}
+
+
+
+.continr{
+    margin-top: 30px;
+    display: grid;
+    /* border: 2px solid black; */
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(5 , auto);
+    grid-gap: 60px;
+    
+}
+
+.continr >div:hover{
+    animation: photo 4s linear  alternate;
+}
+
+@keyframes photo{
+    0%{transform: rotateY(180deg);}
+    25%{transform: scale(1.2,1.2); color: orange;}
+    50%{background-color: blanchedalmond; color: darkgoldenrod;}
+    100%{color: darkblue; transform: scale(1,1);}
+
+}
+
+
+
+.continr>div{
+    box-shadow: 11px -9px 5px 1px rgba(0,0,0,0.65);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+img{
+    width: 300px;
+    height: 300px;
+    padding: 3px;
+
+    
+}
